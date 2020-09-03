@@ -12,6 +12,12 @@ const createWindow = () => {
   const mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
+    webPreferences: {
+      // to use node modules in our js files
+      nodeIntegration: true,
+      // to use remote modules
+      enableRemoteModule: true,
+    },
   })
 
   // and load the index.html of the app.
