@@ -17,6 +17,7 @@ const createWindow = () => {
       nodeIntegration: true,
       // to use remote modules
       enableRemoteModule: true,
+      worldSafeExecuteJavaScript: true,
     },
   })
 
